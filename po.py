@@ -13,6 +13,4 @@ st.markdown(f'<iframe width="1100" height="600" src="{power_bi_dashboard_url}"><
 
 # Run the Streamlit app
 if __name__ == "__main__":
-    st.write("Hello, Streamlit APP")
     st.write("Rport vilda from 1-1-2024 to 27-1-2024")
-    st.write("I hope project like you ")
