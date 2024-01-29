@@ -13,4 +13,3 @@ st.markdown(f'<iframe width="1200" height="800" src="{power_bi_dashboard_url}"><
 
 # Run the Streamlit app
 if __name__ == "__main__":
-    
