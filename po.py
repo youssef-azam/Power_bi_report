@@ -10,13 +10,18 @@ default_dimensions_dashboard_url = "https://app.powerbi.com/reportEmbed?reportId
 # Set custom height and width for the first dashboard
 custom_width = 1140
 custom_height = 541.25
-custom_dimensions_html_code = f'<iframe width="{custom_width}" height="{custom_height}" src="{custom_dimensions_dashboard_url}"></iframe>'
+custom_dimensions_html_code = f'<iframe title="تقرير المبيعات فلادا - اليومي" width="{custom_width}" height="{custom_height}" src="{custom_dimensions_dashboard_url}" frameborder="0" allowFullScreen="true"></iframe>'
 
 # Use Streamlit to display the first Power BI dashboard with custom dimensions
 st.markdown(custom_dimensions_html_code, unsafe_allow_html=True)
 
+# Set custom height and width for the second dashboard
+default_dimensions_width = 1140
+default_dimensions_height = 541.25
+default_dimensions_html_code = f'<iframe title="تقرير المبيعات فلادا" width="{default_dimensions_width}" height="{default_dimensions_height}" src="{default_dimensions_dashboard_url}" frameborder="0" allowFullScreen="true"></iframe>'
+
 # Use Streamlit to display the second Power BI dashboard with default dimensions
-st.markdown(f'<iframe src="{default_dimensions_dashboard_url}"></iframe>', unsafe_allow_html=True)
+st.markdown(default_dimensions_html_code, unsafe_allow_html=True)
 
 # Additional Streamlit app code can be added here
 
